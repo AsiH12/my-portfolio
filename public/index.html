@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asi Hassan's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <header>
+      <img src="images/logo.jpeg" alt="Your Logo" class="logo" />
+      <h1>Asi Hassan's Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Asi Hassan, a Full Stack Developer with a passion for creating
+        beautiful and functional web applications. I have experience in various
+        technologies and enjoy solving complex problems.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <article>
+        <h3>Ecommerce Shop</h3>
+        <img src="images/projects/shop.jfif" alt="Ecommerce Shop" class="project-image" />
+        <p>
+          Full-fledged Ecommerce shop, with back and front support including
+          Docker. <a href="https://github.com/asi-hassan/ecommerce-shop" target="_blank">View Project</a>
+        </p>
+      </article>
+      <article>
+        <h3>Online Digital Library</h3>
+        <img src="images/projects/library.png" alt="Online Digital Library" class="project-image" />
+        <p>
+          A comprehensive online digital library that provides users with access to a
+          vast collection of books, articles, and multimedia resources. <a href="https://github.com/asi-hassan/digital-library" target="_blank">View Project</a>
+        </p>
+      </article>
+      <!-- Add more projects as needed -->
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form
+        action="mailto:asi.hassan111@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Asi Hassan. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
