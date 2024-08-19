@@ -1,195 +1,126 @@
-/* Basic reset and body styling */
+/* Base Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #f4f4f4;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  background-image: url('images/todo.jfif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
-/* Container for the background image */
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 250px; /* Adjust height as needed */
-  background-image: url("../images/background.jpg"); /* Path to your background photo */
-  background-size: cover; /* Cover the container */
-  background-position: center; /* Center the photo */
-  background-attachment: scroll; /* Scroll with the content */
-  z-index: -1; /* Place behind other elements */
-}
-
-/* Header styling */
+/* Header Styles */
 header {
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center; /* Center items horizontally */
-  text-align: center; /* Center text */
-  position: relative; /* Ensure header is positioned relative to the background image */
-  z-index: 1; /* Ensure header content is above the background image */
-  margin-top: 250px; /* Push the header content below the background image */
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Logo styling */
-.logo {
-  height: 250px; /* Adjust size as needed */
-  width: auto; /* Maintain aspect ratio */
+header img.logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
 }
 
-/* Header title styling */
 header h1 {
-  font-size: 1.75rem;
-  margin: 0.5rem 0; /* Space around header title */
+  margin-top: 0;
+  font-size: 2rem;
 }
 
-/* Navigation styling */
-nav ul {
-  list-style: none; /* Remove bullet points */
+header nav ul {
+  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center; /* Center navigation items */
-  gap: 1rem; /* Space between menu items */
+  justify-content: center;
+  gap: 1.5rem;
 }
 
-nav ul li a {
+header nav a {
   color: #fff;
   text-decoration: none;
-  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+header nav a:hover {
+  color: #ff9800;
 }
 
-/* Section styling */
+/* Main Content Styles */
 section {
   padding: 2rem;
-  text-align: center;
-}
-
-/* About Me section styling */
-#about {
-  background-color: #fff;
-  padding: 2rem;
-}
-
-#about h2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-}
-
-#about p {
-  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-/* Projects section styling */
-#projects {
-  background-color: #f4f4f4;
-  padding: 2rem;
-}
-
-#projects h2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  margin: 2rem auto;
 }
 
 #projects article {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 #projects h3 {
+  margin-top: 0;
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
 }
 
 #projects p {
   font-size: 1rem;
 }
 
-#projects a {
-  color: #007bff; /* Link color */
-  text-decoration: none;
-}
-
-#projects a:hover {
-  text-decoration: underline;
-}
-
-/* Contact section styling */
-#contact {
-  background-color: #fff;
-  padding: 2rem;
-  text-align: center;
-}
-
-#contact h2 {
-  font-size: 1.75rem;
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
 }
 
+/* Form Styles */
 form {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
-  margin: 0 auto;
+  gap: 1rem;
 }
 
 form label {
-  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
-form input,
-form textarea {
-  margin-bottom: 1rem;
+form input, form textarea {
   padding: 0.75rem;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 4px;
 }
 
 form button {
-  background-color: #333;
+  background-color: #007bff;
   color: #fff;
   padding: 0.75rem;
   border: none;
-  cursor: pointer;
   border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 form button:hover {
-  background-color: #555;
+  background-color: #0056b3;
 }
 
-/* Footer styling */
+/* Footer Styles */
 footer {
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   text-align: center;
   padding: 1rem;
   position: fixed;
   bottom: 0;
   width: 100%;
-}
-/* Project image styling */
-.project-image {
-  width: 100%; /* Adjust as needed */
-  max-width: 600px; /* Maximum width for larger screens */
-  height: auto; /* Maintain aspect ratio */
-  margin: 1rem 0; /* Space around images */
-  border-radius: 8px; /* Optional: rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
-}
-
-/* Ensure articles have space around them */
-article {
-  margin-bottom: 2rem;
 }
