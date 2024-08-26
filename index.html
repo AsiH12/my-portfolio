@@ -47,6 +47,32 @@
         </p>
       </article>
       <article>
+        <h3>Honey Business</h3>
+        <img
+          src="images/projects/honey.jpg"
+          alt="Honey Business"
+          class="project-image"
+        />
+        <p>
+          A full-stack web application for a small, family-run honey business,
+          showcasing skills in React and Django. Features include product listings
+          with pricing, a polished design with a rusty/woody theme, and cloud integration.
+          <a href="https://asih12.github.io/Honey-Business/" target="_blank">View Project</a>
+        </p>
+      </article>
+      <article>
+        <h3>Task Manager</h3>
+        <img
+          src="images/projects/Task manager.png"
+          alt="Task Manager"
+          class="project-image"
+        />
+        <p>
+          Basic ToDo list app with importance-based filtering and completion.
+          <a href="https://asih12.github.io/Task-Manager/" target="_blank">View Project</a>
+        </p>
+      </article>
+      <article>
         <h3>Online Digital Library</h3>
         <img
           src="images/projects/library.png"
@@ -56,9 +82,7 @@
         <p>
           A comprehensive online digital library that provides users with access
           to a vast collection of books, articles, and multimedia resources.
-          <a href="https://github.com/AsiH12/Library-2" target="_blank"
-            >View Project</a
-          >
+          <a href="https://github.com/AsiH12/Library-2" target="_blank">View Project</a>
         </p>
       </article>
       <article>
@@ -71,17 +95,7 @@
         <p>
           A minimalist blog application demonstrating essential features for a
           blogging platform.
-        </p>
-      </article>
-      <article>
-        <h3>Task manager</h3>
-        <img
-          src="images/projects/Task manager.png"
-          alt="Task manager"
-          class="project-image"
-        />
-        <p>
-          Basic ToDo list app with importance base filtering and completion
+          <a href="https://asih12.github.io/simple-blog/" target="_blank">View Project</a>
         </p>
       </article>
       <!-- Add more projects as needed -->
@@ -90,18 +104,39 @@
     <section id="contact">
       <h2>Contact</h2>
       <form
+        id="contact-form"
         action="mailto:asi.hassan111@gmail.com"
         method="post"
         enctype="text/plain"
       >
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          minlength="2"
+          placeholder="Your Name"
+        />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Your Email"
+        />
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          required
+          minlength="10"
+          placeholder="Your Message"
+        ></textarea>
 
         <button type="submit">Send</button>
       </form>
